@@ -9,6 +9,7 @@ specifiers:
   '@nestjs/schematics': ^10.0.0
   '@nestjs/swagger': ^7.3.0
   '@nestjs/testing': ^10.0.0
+  '@prisma/client': ^5.9.1
   '@types/express': ^4.17.17
   '@types/jest': ^29.5.2
   '@types/node': ^20.3.1
@@ -37,6 +38,7 @@ dependencies:
   '@nestjs/mapped-types': 2.0.5_our24h4hxhw73a2jqguidg6clu
   '@nestjs/platform-express': 10.3.3_dh3vy25y4u4axkklolxhc7ud74
   '@nestjs/swagger': 7.3.0_olfmzq5txf56ew5pgyq6jcamlu
+  '@prisma/client': 5.9.1
   reflect-metadata: 0.2.1
   rxjs: 7.8.1
   swagger-ui-express: 5.0.0
@@ -1100,6 +1102,17 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dev: true
+
+  /@prisma/client/5.9.1:
+    resolution: {integrity: sha512-caSOnG4kxcSkhqC/2ShV7rEoWwd3XrftokxJqOCMVvia4NYV/TPtJlS9C2os3Igxw/Qyxumj9GBQzcStzECvtQ==}
+    engines: {node: '>=16.13'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dev: false
 
   /@sinclair/typebox/0.27.8:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
