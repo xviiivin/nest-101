@@ -43,10 +43,7 @@ export class UserController {
   }
 
   @Get()
-  async getAllUser(
-    @Req() request: Request,
-    @Res() response: Response,
-  ): Promise<void> {
+  async getAllUser(@Req() request: Request, @Res() response: Response) {
     try {
       const users = await this.userService.getAllUser();
 
