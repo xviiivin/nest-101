@@ -13,6 +13,9 @@ import {
 import { UserService } from './users.service';
 import { Users } from './users.model';
 import { Request, Response } from 'express';
+import { ApiTags } from '@nestjs/swagger';
+
+@ApiTags('api/user')
 @Controller('api/user')
 export class UserController {
   constructor(private readonly userService: UserService) {}
